@@ -1,0 +1,23 @@
+package locadora;
+
+public class Aluguel {
+	   private DVD dvd;
+	   private int diasAlugado;
+	 
+	   public Aluguel(DVD dvd, int diasAlugado) {
+	      this.dvd = dvd;
+	      this.diasAlugado = diasAlugado;
+	   }
+	 
+	   public DVD getDVD() {
+	      return dvd;
+	   }
+	 
+	   public int getDiasAlugado() {
+	      return diasAlugado;
+	   }
+
+	   public double getValorAluguel() {
+			return dvd.getPrecoFixo() + (dvd.getAdicionalPorDia() * diasAlugado);
+	   }
+}
