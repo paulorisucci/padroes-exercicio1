@@ -7,11 +7,13 @@ public abstract class Classificacao {
     protected int diasAluguelGratis;
 
     protected double valorFixo;
+    
+    protected int pontuacaoAlugadorFrequente;
 
     public abstract int getCodigoPreco();
 
     public int getPontuacaoAlugadorFrequente(int diasAlugado){
-        return 1;
+        return pontuacaoAlugadorFrequente;
     }
 
     public double getValorAluguel(int diasAlugado) {
