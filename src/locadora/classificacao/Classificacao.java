@@ -16,4 +16,8 @@ public abstract class Classificacao {
         }
         return valorFixo;
     }
+    
+    public int getPontuacaoAlugadorFrequente(int diasAlugado) {
+        return 1;
+    }
 }
