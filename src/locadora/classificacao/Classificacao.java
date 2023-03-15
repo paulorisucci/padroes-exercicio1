@@ -8,13 +8,7 @@ public abstract class Classificacao {
 
     protected double valorFixo;
     
-    protected int pontuacaoAlugadorFrequente;
-
     public abstract int getCodigoPreco();
-
-    public int getPontuacaoAlugadorFrequente(int diasAlugado){
-        return pontuacaoAlugadorFrequente;
-    }
 
     public double getValorAluguel(int diasAlugado) {
         if(diasAlugado > diasAluguelGratis) {
